@@ -24,3 +24,10 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+    margin-bottom: 5px;
+}
+  
