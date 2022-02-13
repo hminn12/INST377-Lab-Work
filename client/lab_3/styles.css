@@ -18,9 +18,9 @@ body {
     margin-bottom: 10px;
 }
 .header-2 {
-    border: 1px solid #fff;  
     width: 900px;
     display: flex;
+    background-color: rgba(89,148,217,255);
     justify-content: space-around;
     align-items: center;
   }
