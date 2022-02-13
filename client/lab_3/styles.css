@@ -17,3 +17,10 @@ body {
     margin: 0;
     margin-bottom: 10px;
 }
+.header-2 {
+    border: 1px solid #fff;  
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
