@@ -20,8 +20,6 @@ body {
     width: 100%;
     display: inline-block;
     background-color: rgba(89,148,217,255);
-    justify-content: space-around;
-    align-items: center;
   }
 
 .subtitle {
