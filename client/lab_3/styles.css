@@ -20,6 +20,7 @@ body {
     width: 100%;
     display: flex;
     background-color: rgba(89,148,217,255);
+    padding: 10px 15px;
   }
 
 .header-2 .subtitle {
