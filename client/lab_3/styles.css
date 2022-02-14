@@ -16,16 +16,14 @@ body {
     padding: 10px 15px;
     margin: 0;
 }
-.header-2 {
-    width: 100%;
-    display: flex;
-    background-color: rgba(89,148,217,255);
-    padding: 25px 25px;
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
   }
 
-.header-2 .subtitle {
-    color: rgba(255, 255, 255, 0.8);
-    justify-content: flex-end;
-    border-radius: 4px;
-}
+.menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+  }
   
