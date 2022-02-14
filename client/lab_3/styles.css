@@ -18,13 +18,13 @@ body {
 }
 .header-2 {
     width: 100%;
-    display: inline-block;
+    display: flex;
     background-color: rgba(89,148,217,255);
   }
 
 .header-2 .subtitle {
     color: rgba(255, 255, 255, 0.8);
     justify-content: flex-end;
-    
+
 }
   
