@@ -11,7 +11,7 @@ body {
     font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
     margin:0;
 }
-.header{
+.top {
     width: 100%;
     display: inline-block;
     background-color: rgba(0,139, 139,0.8);
@@ -42,3 +42,17 @@ body {
 .login {
     margin-left: 20px;
 }
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
