@@ -3,11 +3,6 @@ body {
     height: 100%;
 }
   
-.container {
-    display: flex;
-    align-items: flex-start;
-}
-  
 .grid {
     width: 200px;
     height: 400px;
