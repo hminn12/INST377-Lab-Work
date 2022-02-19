@@ -141,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     upNextTetrominoes[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add('tetromino');
-      displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom];
     });
   }
 });
