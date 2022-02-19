@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  startBtn.addEventListener('click', () => {
+  StartBtn.addEventListener('click', () => {
     if (timerId) {
       clearInterval(timerId);
       timerId = null;
