@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
       current = theTetrominoes[random][currentRotation];
       currentPosition = 4;
       draw();
+      displayShape;
     }
   }
 
@@ -138,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
       square.classList.remove('tetromino');
       square.style.backgroundColor = '';
     });
-    upNextTetrominoes[nextRandom].forEach( index => {
+    upNextTetrominoes[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add('tetromino');
       displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom];
     });
