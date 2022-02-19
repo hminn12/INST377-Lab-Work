@@ -11,9 +11,9 @@ body {
 .grid {
     width: 200px;
     height: 400px;
-    background: yellow;
     display: flex;
     flex-wrap: wrap;
+    background-color: yellow;
 }
   
 .mini-grid {
@@ -31,7 +31,6 @@ body {
     width: 20px;
 }
   
-.grid .tetromino,
-.mini-grid .tetromino {
-    background: blue;
+.tetromino {
+    background-color: blue;
 }
