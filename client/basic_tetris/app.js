@@ -1,3 +1,4 @@
+/* eslint-disable no-loop-func */
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid');
   let squares = Array.from(document.querySelectorAll('.grid div'));
@@ -94,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       draw();
       displayShape();
       addScore();
+      gameOver();
     }
   }
 
@@ -159,11 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function addScore() {
-    for (let i = 0; i < 199; i +=width) {
-      const row = [i, i+1, i+2, i+3, i+4, i+5, i+6, i+7, i+8, i+9];
-  
-      if(row.every((index) => squares[index].classList.contains('taken'))) {
-        score +=10;
+    for (let i = 0; i < 199; i += width) {
+      const row = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8, i + 9];
+
+      if (row.every((index) => squares[index].classList.contains('taken'))) {
+        score += 10;
         scoreDisplay.innerHTML = score;
         row.forEach((index) => {
           squares[index].classList.remove('taken');
@@ -173,6 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
         squares = squaresRemoved.concat(squares);
         squares.forEach((cell) => grid.appendChild(cell));
       }
+    }
+  }
+
+  function gameOver() {
+    if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
+      scoreDisplay.innerHTML = 'end';
+      clearInterval(timerId);
     }
   }
 });
